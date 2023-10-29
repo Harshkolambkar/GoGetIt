@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  /* box-sizing: border-box; */
+  margin: 0%;
+    padding: 0%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  /* padding: 10px;
+  border: 1px solid red; */
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+header{
+    height:110px;
+    width:100%;
+    background-color: aqua;
+}
+#login_btn{
+    background-color: #212e45; 
+    width:auto;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 20px 20px 20px 20px;
+    float: right;
+    position: relative;
+    top: 55px;
+    right:10px;
+}
+#signup_btn{
+    background-color: #212e45; 
+    width:auto;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 20px 20px 20px 20px;
+    float: right;
+    position: relative;
+    top:10px;
+    left: 80px;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    }
+    
+    .menu {
+    display: flex;
+    }
+    
+    .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    }
+    
+    .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    }
+    
+    .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    }
+    
+/* Media Query for Responsive Navbar */
+@media (max-width: 700px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #444;
+        position: absolute;
+        top: 160px;
+        left: 0;
+    }
+
+    .menu.active a {
+        margin: 10px 0;
+    }
+}
+
+.menu img{
+    height: 20px;
+    width: 20px;
+}
+
+.cart-icon {
+    /* position: fixed;
+    top:105px;
+    left:350px;
+     */
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+    
+.product-card {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: calc(31% - 10px); 
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease; 
+}
+
+.product-card:hover{
+    box-shadow: 5px 5px grey;
+}
+
+.product-card img {
+max-width: 100%; 
+height: auto; 
+}
+    
+/* Additional CSS for responsive design */
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 20px); 
+    }
+}
+    
+@media (max-width: 480px) {
+    .product-card {
+        width: calc(100% - 20px); 
+    }
+}
+
+#sidebar{
+    position: relative;
+    left:20px
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="row">
+        <div class="col-12">
+            
+        <img src="images/logo.png" height="90px" style="padding:10px;">
+        <a href="Sign_up.html"><button id="login_btn" src="">Login</button></a>
+        <a href="registration_page.html"><button id="signup_btn">Sign-In</button></a>
+          
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="navbar">
+        
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="mens/mens.html">Mens</a>
+            <a href="female.html">Females</a>
+            <a href="kids.html">Kids</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="#"> <div class="cart-icon">
+                <img src="images/cart.jfif">
+                <span id="cart-count">0</span>
+            </div> </a>
+            
+        </div>
+    </div>
+</div>
+
+<div class="row">
+
+<div class="col-2" id="sidebar">
+  <form>
+    <input type="checkbox" id="croptop" name="croptop">
+    <label for="croptop"> Crop Top </label><br>
+    <input type="checkbox" id="shirts" name="shirts">
+    <label for="shirts">Shirts</label><br>
+    <input type="checkbox" id="tops" name="tops">
+    <label for="tops">Tops</label><br><br>
+  </form>
+</div>
+
+<div class="col-8">
+  <h1>The City</h1>
+  <img src="images/women_disc.jpg" height="200px" width="100%">
+
+  
+    <div id="product-container" class="product-container">
+        <!-- Product cards will be added here dynamically -->
+
+
+    </div>
+  
+</div>
+
+
+</div>
+<script src="female.js"></script>
+</body>
+</html>

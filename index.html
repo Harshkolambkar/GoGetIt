@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoGetIt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" height="90px" style="padding:10px;">
+        <a href="Sign_up.html"><button id="login_btn" src="">Login</button></a>
+        <a href="registration_page.html"><button id="signup_btn">Sign-In</button></a>
+    </header>
+    
+    <div class="container">
+        <div class="navbar">
+            
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="mens.html">Mens</a>
+                <a href="female.html">Female</a>
+                <a href="kids.html">Kids</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="#"> <div class="cart-icon">
+                    <img src="images/cart.jfif">
+                    <span id="cart-count">0</span>
+                </div> </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="male">
+        <div class="male-flex">
+            <h1 style="text-align: center; padding: 5px;">Mens discount!!!</h1>
+            <a href="mens.html"><img src="images/mens_disc.jpg" height="340px" width="550px"></a>
+        </div>
+        <div class="male-flex" id="male-flex">
+            
+        </div>
+    </div>
+
+    <div class="female">
+        
+        <div class="female-flex" id="female-flex">
+            
+        </div>
+
+        <div class="female-flex">
+            <h1 style="text-align: center; padding: 5px;">Female discount!!!</h1>
+            <a href="female.html"><img src="images/women_disc.jpg" align-item="right" height="340px" width="550px"></a>
+        </div>
+    </div>
+    
+    <div class="kids">
+        <div class="kids-flex">
+            <h1 style="text-align: center; padding: 5px ;">Kids Section</h1>
+            <a href="kids.html"><img src="images/kids_disc2.jpg" height="340px" width="550px"></a>
+        </div>
+        <div class="kids-flex" id="kids-flex">
+            
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="big-card">
+            <span class="close-button" onclick="closeCardDetails()">×</span>
+            <div class="big-card-content">
+                <div class="big-card-image">
+                    <img src="" alt="" id="big-card-image">
+                </div>
+                <div class="card-content">
+                    <h2 id="big-card-title"></h2>
+                    <p id="big-card-price"></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="accessories">
+        <div class="accessories-flex" id="accessories-flex">
+            
+        </div>
+
+        <div class="accessories-flex">
+            <h1 style="text-align: center; padding: 5px;">Accessories!!!</h1>
+            <a href="accessories.html"><img src="images/accessories_disc.jpg" align-item="right" height="340px" width="550px"></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row" style="padding-top:20px;padding-left: 10px;">
+            <div class="col-3" id="mail">
+                <h1>Sign up and get 10% OFF</h1>
+                <form>
+                    <input type="email" placeholder="Email" id="signupemail"><br><br>
+                    <button id="subscription_btn">Signup</button>
+                </form>
+                <p style="text-align: left;">* For new customers only</p>
+            </div>
+
+            <div class="col-3" id="account">
+                <ul>
+                    <a href=""><li><b>My Account</b></li></a><br>
+                    <a href=""><li>profile</li></a>
+                    <a href=""><li>Account</li></a>
+                    <a href=""><li>Purchase</li></a>
+                    <a href=""><li>Credits</li></a>
+                    <a href=""><li>Account</li></a>
+                </ul>
+            </div>
+
+            <div class="col-3" id="support">
+                <ul>
+                    <a href=""><li><b>Support</b></li></a><br>
+                    <a href=""><li>Contsct</li></a>
+                    <a href=""><li>FAQs</li></a>
+                    <a href=""><li>Shipping</li></a>
+                    <a href=""><li>Return</li></a>
+                    <a href=""><li>Terms</li></a>
+                </ul>
+            </div>
+
+            <div class="col-3" id="support">
+                <ul>
+                    <a href=""><li><b>blah</b></li></a><br>
+                    <a href=""><li>Contsct</li></a>
+                    <a href=""><li>FAQs</li></a>
+                    <a href=""><li>Shipping</li></a>
+                    <a href=""><li>Return</li></a>
+                    <a href=""><li>Terms</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center; padding-top: 10px; padding-bottom: 10px;">
+            <h4>&copy;GoGetIt</h4>
+        </div>
+    </footer>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

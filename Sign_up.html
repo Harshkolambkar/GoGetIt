@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In</title>
+    <style>
+        .login{
+            height: 400px;
+            width:600px;
+            background-image: url("images/signup-background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 8%;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            border:1px solid black;
+            box-shadow: 10px 10px #888888;
+        }
+        #back_btn{
+            text-decoration: none;
+            color:black;
+        }
+        button {
+            background-color: #212e45; 
+            width:auto;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 20px 20px 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" id="back_btn"><h1> &#171; Back</h1></a>
+    <div class="login">
+        <h1 style="text-align: center;">Welcome Back!</h1>
+        <form name="loginform">
+            <table cellpadding="10">
+                <tr>
+                    <td>Username: </td>
+                    <td><input type="text" name="user_name"></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" name="user_password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button>login</button>  
+                        <h5> Don't have an account? <a href="registration_page.html">Sign-Up</a> </h5>  
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
