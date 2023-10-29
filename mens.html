@@ -128,7 +128,7 @@ header{
         margin: 10px 0;
     }
 
-    .menu.active ~ #sidebar input[type="checkbox"] {
+    .menu.active .sidebar-checkbox {
         display: none;
     }
 }
@@ -190,8 +190,14 @@ height: auto;
 
 #sidebar{
     position: relative;
-    left:20px
+    left:15px;
+    top:250px;
 }
+
+#sidebar form{
+    background-color: #ccc;
+}
+
 
 </style>
 </head>
@@ -233,16 +239,17 @@ height: auto;
 
 <div class="row">
 
-<div class="col-3" id="sidebar">
-  <form>
-    <input type="checkbox" id="tshirts" name="tshirts">
-    <label for="tshirts"> Tshirts </label><br>
-    <input type="checkbox" id="shirts" name="shirts">
-    <label for="shirts">Shirts</label><br>
-    <input type="checkbox" id="jackets" name="jackets">
-    <label for="jackets">Jackets</label><br><br>
-  </form>
-</div>
+    <div class="col-3" id="sidebar">
+        <form>
+          <input type="checkbox" id="tshirts" name="tshirts" class="sidebar-checkbox">
+          <label for="tshirts"> Tshirts </label><br>
+          <input type="checkbox" id="shirts" name="shirts" class="sidebar-checkbox">
+          <label for="shirts">Shirts</label><br>
+          <input type="checkbox" id="jackets" name="jackets" class="sidebar-checkbox">
+          <label for="jackets">Jackets</label><br><br>
+        </form>
+      </div>
+      
 
 <div class="col-9">
   <h1>Mens</h1>
