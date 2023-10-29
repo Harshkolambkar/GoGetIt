@@ -1,3 +1,7 @@
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.menu').classList.toggle('active');
+});
+
 const products = [
     { name: 'Fastrack', price: 499.00, image: 'images/accessories/accessoriesg1.jpg', category: 'Glasses' },
     { name: 'Rayban', price: 599.00, image: 'images/accessories/accessoriesg2.jpg', category: 'Sunglasses' },

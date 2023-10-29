@@ -1,3 +1,7 @@
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.menu').classList.toggle('active');
+});
+
 const products = [
     { name: 'Skirt by Harsh', price: 499.00, image: 'images/kids/kids1.1.jpg', category: 'Skirt' },
     { name: 'Shop your skirt', price: 599.00, image: 'images/kids/kids1.2.jpg', category: 'Skirt' },

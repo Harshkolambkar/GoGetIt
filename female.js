@@ -1,3 +1,7 @@
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.menu').classList.toggle('active');
+});
+
 const products = [
     
     { name: 'Butterfly design top', price: 199.00, image: 'images/female/tees1.1.jpg', category: 'tops' },
