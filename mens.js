@@ -1,3 +1,7 @@
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.menu').classList.toggle('active');
+});
+
 const products = [
     { name: 'Local hero Tshirt', price: 499.00, image: 'images/mens/tshirt_1.jfif', category: 'tshirts' },
     { name: 'Naruto Tshirt', price: 599.00, image: 'images/mens/tshirt_2.jfif', category: 'tshirts' },
