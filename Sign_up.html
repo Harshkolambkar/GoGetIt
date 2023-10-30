@@ -1,64 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log-In</title>
     <style>
-        .login{
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .login {
+            max-width: 600px;
+            width: 90%;
             height: 400px;
-            width:600px;
             background-image: url("images/signup-background.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            border-radius: 8%;
+            border-radius: 8px;
             position: absolute;
-            top:50%;
-            left:50%;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            border:1px solid black;
+            border: 1px solid black;
             box-shadow: 10px 10px #888888;
         }
-        #back_btn{
-            text-decoration: none;
-            color:black;
+
+        .signin {
+            padding: 20px;
+            text-align: center;
         }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
         button {
-            background-color: #212e45; 
-            width:auto;
+            background-color: #212e45;
+            width: calc(30% - 20px);
             border: none;
             color: white;
-            padding: 15px 32px;
+            padding: 15px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            border-radius: 20px 20px 20px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #314259;
+        }
+
+        .back-btn {
+            text-decoration: none;
+            color: black;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .login {
+                height: auto;
+            }
         }
     </style>
 </head>
+
 <body>
-    <a href="index.html" id="back_btn"><h1> &#171; Back</h1></a>
+    <a href="index.html" class="back-btn">&#171; Back</a>
     <div class="login">
         <h1 style="text-align: center;">Welcome Back!</h1>
-        <form name="loginform">
-            <table cellpadding="10">
-                <tr>
-                    <td>Username: </td>
-                    <td><input type="text" name="user_name"></td>
-                </tr>
-                <tr>
-                    <td>Password: </td>
-                    <td><input type="password" name="user_password"></td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center">
-                        <button>login</button>  
-                        <h5> Don't have an account? <a href="registration_page.html">Sign-Up</a> </h5>  
-                    </td>
-                </tr>
-            </table>
-        </form>
+        <div class="signin">
+            <form name="loginform">
+                <label>Username:</label>
+                <input type="text" name="user_name" required><br>
+                <label>Password:</label>
+                <input type="password" name="user_password" required><br>
+                <button type="submit">Login</button>
+                <h5>Don't have an account? <a href="registration_page.html">Sign-Up</a></h5>
+            </form>
+        </div>
     </div>
 </body>
+
 </html>
